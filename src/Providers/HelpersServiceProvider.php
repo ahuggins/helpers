@@ -11,12 +11,13 @@ class HelpersServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../helpers.php' => base_path('helpers.php'),
         ], 'helpers');
+        
+        if (file_exists(base_path('helpers.php'))) {
+            require_once(base_path('helpers.php'));
+        }
     }
 
     public function register()
     {
-        if (file_exists(base_path('helpers.php'))) {
-            require_once(base_path('helpers.php'));
-        }
     }
 }
