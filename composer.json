@@ -8,7 +8,11 @@
             "email": "andrewhuggins@gmail.com"
         }
     ],
-    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AHuggins\\Helpers\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
