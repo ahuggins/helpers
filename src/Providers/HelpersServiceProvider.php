@@ -16,7 +16,7 @@ class HelpersServiceProvider extends ServiceProvider
     public function register()
     {
         if (file_exists(base_path('helpers.php'))) {
-            require base_path('helpers.php');
+            require_once(base_path('helpers.php'));
         }
     }
 }
