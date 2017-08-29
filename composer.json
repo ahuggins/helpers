@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AHuggins\\Helpers\\HelpersServiceProvider"
+                "AHuggins\\Helpers\\Providers\\HelpersServiceProvider"
             ]
         }
     }
